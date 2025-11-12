@@ -1,6 +1,6 @@
 {
   "name": "suxun",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "打包必填",
   "main": "main.js",
   "repository": "CaoShuai66/suxun",
@@ -28,6 +28,7 @@
     "electron": "^39.1.2"
   },
   "dependencies": {
+    "electron-log": "^5.4.3",
     "electron-squirrel-startup": "^1.0.1",
     "update-electron-app": "^3.1.1"
   }

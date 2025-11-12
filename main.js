@@ -1,5 +1,12 @@
-const { updateElectronApp } = require('update-electron-app')
-updateElectronApp();
+const { updateElectronApp, UpdateSourceType } = require('update-electron-app')
+updateElectronApp({
+  updateSource: {
+    type: UpdateSourceType.ElectronPublicUpdateService,
+    repo: 'CaoShuai66/suxun'
+  },
+  updateInterval: '1 hour',
+  logger: require('electron-log')
+})
 
 const { app, BrowserWindow } = require('electron/main')
 const path = require('node:path')
