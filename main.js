@@ -1,4 +1,5 @@
 const { updateElectronApp } = require('update-electron-app')
+updateElectronApp();
 
 const { app, BrowserWindow } = require('electron/main')
 const path = require('node:path')
@@ -16,7 +17,6 @@ const createWindow = () => {
 }
 
 app.whenReady().then(() => {
-  updateElectronApp();
   createWindow()
 
   app.on('activate', () => {
